@@ -12,7 +12,7 @@ public class Pdelete{
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, "kalpesh");
             int val = pstmt.executeUpdate();
-             System.out.println(val + " record(s) deleted successfully");
+             System.out.println(val + " record deleted successfully");
 
             pstmt.close();
             conn.close();
